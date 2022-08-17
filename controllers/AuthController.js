@@ -10,7 +10,7 @@ const register = (req, res, next) => {
                 error: er
             })
         }
-
+// hello
         let user = new User({
             fname: req.body.fname,
             lname: req.body.lname,
