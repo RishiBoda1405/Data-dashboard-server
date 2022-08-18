@@ -1,13 +1,14 @@
-const { MongoClient } = require('mongodb');
-const express = require('express');
-const mongoose = require('mongoose');
-const morgan = require('morgan');
-const bodyParser = require('body-parser')
+import { MongoClient } from "mongodb";
+import express from "express";
+import mongoose from "mongoose";
+import morgan from "morgan";
+import bodyParser from "body-parser";
 var cors = require('cors')
+
 
 const AuthRoute = require('./routes/auth')
 
-// const url = "mongodb+srv://rishi:rishi@cluster0.u0lnoet.mongodb.net"
+
 const url = "mongodb+srv://rishi:rishi@cluster0.1p9wgf3.mongodb.net/Data-server?retryWrites=true&w=majority"
 
 
