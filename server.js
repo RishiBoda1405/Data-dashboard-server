@@ -10,11 +10,7 @@ const AuthRoute = require('./routes/auth')
 // const url = "mongodb+srv://rishi:rishi@cluster0.u0lnoet.mongodb.net"
 const url = "mongodb+srv://rishi:rishi@cluster0.1p9wgf3.mongodb.net/Data-server?retryWrites=true&w=majority"
 
-// const connectionParams = {
-//     useNewUrlParser: true,
-//     useCreateIndex: true,
-//     useUnifiedTopolgy: true
-// }
+
 mongoose.connect(url)
     .then(() => {
         console.log('Connected to the database');
@@ -22,20 +18,6 @@ mongoose.connect(url)
     .catch((err) => {
         console.error(`Error connecting to the database ${err}`);
     })
-
-// try {
-//     await client.connect();
-//     console.log('Connection established');
-//     await listDatabases(client);
-// }
-// catch(e){
-//     console.error(e);
-// }finally {
-//     await client.close()
-// }
-
-
-
 
 async function listDatabases(client) {
     console.log('working')
